@@ -1,0 +1,6 @@
+read -p 'Enter the Username:'Username
+read -p 'Enter the name of the account holder:'NAME
+read -p 'Enter the password for the user account:'PASSWORD
+useradd -c "${NAME}" -m ${USERNAME}
+echo ${PASSWORD} |passwd --stdin{USERNAME}
+passwd -e ${USERNAME}
